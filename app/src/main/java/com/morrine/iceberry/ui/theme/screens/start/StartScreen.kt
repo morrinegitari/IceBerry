@@ -30,6 +30,7 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.morrine.iceberry.R
 import com.morrine.iceberry.navigation.ROUT_ABOUT
+import com.morrine.iceberry.navigation.ROUT_DASHBOARD
 import com.morrine.iceberry.navigation.ROUT_ITEM
 import com.morrine.iceberry.navigation.ROUT_START
 import com.morrine.iceberry.ui.theme.newOrange
@@ -71,7 +72,7 @@ fun StartScreen(navController: NavController){
         Spacer(modifier = Modifier.height(20.dp))
         Button(
             onClick = {
-                navController.navigate(ROUT_ITEM)
+                navController.navigate(ROUT_DASHBOARD)
             },
             colors = ButtonDefaults.buttonColors(newOrange),
             shape = RoundedCornerShape(10.dp),
